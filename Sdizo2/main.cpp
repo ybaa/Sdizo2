@@ -127,7 +127,7 @@ void readGraph() {
 
 
 int main() {
-	cout << "Martyna Lagozna 218218" << endl;
+	cout << "Martyna Lagozna" << endl;
 	cout << "--------------------------------------------------------------------------------" << endl;
 	cout << "Program sluzy do badania efektywnosci algorytmow grafowych (prima i dijkstry) w zaleznosci od sposobu reprezentajci grafu w pamieci komputera. " << endl;
 	cout << "Uruchomiona wersja jest wersja prezentujaca dzialanie poszczegolnych algorytmow" << endl;
