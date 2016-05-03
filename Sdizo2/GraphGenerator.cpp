@@ -8,7 +8,6 @@
 using namespace std;
 
 GraphGenerator::GraphGenerator() {
-	cout << "test" << endl;
 }
 
 GraphGenerator::GraphGenerator(int x) {

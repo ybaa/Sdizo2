@@ -16,6 +16,7 @@ void randomGraph() {
 
 	int choice = 0;
 	do {
+		cout << endl;
 		cout << "wybierz opcje " << endl;
 		cout << "[1] wyswietl graf skierowany w formie macierzowej" << endl;
 		cout << "[2] wyswietl graf nieskieroway w formie macierzowej" << endl;
@@ -25,7 +26,7 @@ void randomGraph() {
 		cout << "[6] algorytm prima dla grafu nieskierowanego na bazie reprezentacji listowej" << endl;
 		cout << "[7] algorytm dijkstry dla grafu skierowanego na bazie reprezentacji macierzowej" << endl;
 		cout << "[8] algorytm dijkstry dla grafu skierowanego na bazie reprezentacji listowej" << endl;
-		cout << "[9] koniec" << endl;
+		cout << "[9] koniec" << endl << endl;
 		cin >> choice;
 
 		switch (choice) {
@@ -76,6 +77,7 @@ void readGraph() {
 
 	int choice = 0;
 	do {
+		cout << endl;
 		cout << "wybierz opcje " << endl;
 		cout << "[1] wyswietl graf skierowany w formie macierzowej" << endl;
 		cout << "[2] wyswietl graf nieskieroway w formie macierzowej" << endl;
@@ -85,7 +87,7 @@ void readGraph() {
 		cout << "[6] algorytm prima dla grafu nieskierowanego na bazie reprezentacji listowej" << endl;
 		cout << "[7] algorytm dijkstry dla grafu skierowanego na bazie reprezentacji macierzowej" << endl;
 		cout << "[8] algorytm dijkstry dla grafu skierowanego na bazie reprezentacji listowej" << endl;
-		cout << "[9] koniec" << endl;
+		cout << "[9] koniec" << endl << endl;
 		cin >> choice;
 
 		switch (choice) {
@@ -125,15 +127,19 @@ void readGraph() {
 
 
 int main() {
-
-
+	cout << "Martyna Lagozna 218218" << endl;
+	cout << "--------------------------------------------------------------------------------" << endl;
+	cout << "Program sluzy do badania efektywnosci algorytmow grafowych (prima i dijkstry) w zaleznosci od sposobu reprezentajci grafu w pamieci komputera. " << endl;
+	cout << "Uruchomiona wersja jest wersja prezentujaca dzialanie poszczegolnych algorytmow" << endl;
+	cout << "Graf jest wczytywany z pliku badz losowany, przy czym przy wczytywniu z pliku zapisywane sa jego 2 wersje: 1) skierowany - kazda para wierzcholkow jest brana pod uwage, 2) nieskierowany - jesli w pliku pojawi sie krawedz powtorzona, jest ona ignorowana" << endl;
+	cout << "--------------------------------------------------------------------------------" << endl;
 	int randomOrFile = 0;
 
 	do {
 		cout << "wybierz sposob wygenerowania grafu " << endl;
 		cout << "[1] losowo" << endl;
 		cout << "[2] z pliku" << endl;
-		cout << "[3] wyjscie" << endl;
+		cout << "[3] wyjscie" << endl << endl;
 		cin >> randomOrFile;
 
 		switch (randomOrFile) {

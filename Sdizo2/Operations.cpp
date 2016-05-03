@@ -171,8 +171,7 @@ void Operations::printUndirectedNeighbourList() {
 	}
 }
 
-void Operations::makeDirectedNeighbourList()		//dziala dziêki bartek 
-{											// NAPRAWCIE 
+void Operations::makeDirectedNeighbourList(){
 	neighbourList1 = new elementOfList *[verticles];
 	for (int i = 0; i < verticles; i++)
 		neighbourList1[i] = NULL;
@@ -180,9 +179,9 @@ void Operations::makeDirectedNeighbourList()		//dziala dziêki bartek
 	for (int i = 0; i < edges; i++) {
 
 		tmp = new elementOfList;    // Tworzymy nowy element
-		tmp->n = directedGraph[i][1];          // Numerujemy go jako v2
+		tmp->n = directedGraph[i][1];          // Numerujemy go
 		tmp->weight = directedGraph[i][2];
-		tmp->next = neighbourList1[directedGraph[i][0]];    // Dodajemy go na pocz¹tek listy A[v1]
+		tmp->next = neighbourList1[directedGraph[i][0]];    // Dodajemy go na pocz¹tek listy
 		neighbourList1[directedGraph[i][0]] = tmp;
 	}
 
